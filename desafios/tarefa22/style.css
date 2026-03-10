@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Título */
+h1 {
+    margin-bottom: 30px;
+}
+
+/* Container dos blocos */
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Blocos principais */
+.bloco {
+    width: 250px;
+    height: 200px;
+    background-color: #dcdcdc;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Texto escondido */
+.detalhes {
+    display: none;
+    position: absolute;
+    bottom: -90px;
+    left: 0;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Hover no bloco */
+.bloco:hover {
+    background-color: yellow;
+    color: red;
+}
+
+/* Mostrar detalhes ao passar o rato */
+.bloco:hover .detalhes {
+    display: block;
+}
