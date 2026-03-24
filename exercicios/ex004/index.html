@@ -1,12 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt - pt">
+<html lang="pt-pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="html.ico" type="image/x-icon">
-    <title>Teste de FAVICON</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meu programa</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
 </head>
 <body>
-    <h1>Vê o fiveicon aqui em cima</h1>
+
+    <script>
+        var nome = window.prompt('Qual é seu nome?')
+
+        document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.<br>`)
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}<pt>`)
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}`)
+    </script>
+
 </body>
 </html>
